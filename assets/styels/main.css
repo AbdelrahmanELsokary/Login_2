@@ -31,6 +31,11 @@ body {
   --Dhūsar-Grey: #ababab;
   --Dire-Wolf: #282828;
   --Thunder: #4d4d4d;
+  --Mithril: #878787;
+  --Aged-Grey: #7d7d7d;
+}
+img{
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -40,8 +45,125 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--white);
-  padding-top: 5px;
+  padding: 10px;
 }
-header .container a img{
+header .container a img {
   width: 60px;
+}
+section .container {
+  display: flex;
+  justify-content: space-around;
+  height: calc(100vh - 100px);
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+section .container .login {
+  border: 0.5px solid var(--Mithril);
+  border-radius: 10px;
+  padding: 20px;
+  width: 40%;
+}
+section .container .image{
+  width: 50%;
+}
+section .container .login h3 {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 37.5px;
+}
+section .container .login h1 {
+  font-size: 31px;
+  font-weight: 500;
+  line-height: 46.5px;
+}
+section .container .login p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.user-name {
+  margin-bottom: 25px;
+}
+section .container .login form {
+  padding-top: 40px;
+}
+section .container .login form h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 5px;
+}
+section .container .login form .user-name input {
+  outline: none;
+  border: 0.6px solid var(--Dire-Wolf);
+  background-color: var(--white);
+  border-radius: 6px;
+  padding: 15px;
+  width: 100%;
+}
+section .container .login form input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--Dhūsar-Grey);
+}
+section .container .login form .password {
+  display: flex;
+  border: 0.6px solid var(--Dire-Wolf);
+  border-radius: 6px;
+}
+section .container .login form .password input {
+  outline: none;
+  border: 0.6px solid var(--Dire-Wolf);
+  background-color: var(--white);
+  border: none;
+  border-radius: 6px;
+  padding: 15px;
+  width: 100%;
+}
+section .container .login form .password img {
+  width: 20px;
+  height: 18px;
+  margin: auto 20px;
+}
+section .container .login form .check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+section .container .login form .check .input-check label {
+  font-size: 12px;
+  font-weight: 300;
+  padding: 4px;
+}
+section .container .login form .check p {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--Thunder);
+}
+section .container .login form .submit input {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+}
+section .container .login form p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--Aged-Grey);
+  text-align: center;
+}
+section .container .login form p a{
+  font-weight: 600;
+  color: var(--Aged-Grey);
+}
+@media (max-width:545px) {
+  section .container .login{
+    width: 100%;
+  }
 }
