@@ -42,3 +42,6 @@ header {
   background-color: var(--white);
   padding-top: 5px;
 }
+header .container a img{
+  width: 60px;
+}
