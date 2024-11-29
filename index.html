@@ -28,20 +28,18 @@
           <h1>Sign in to </h1>
           <p>Lorem Ipsum is simply </p>
           <form>
-            <div class="user-name">
-              <h3>User name</h3>
-              <input type="text" placeholder="Enter your user name" autofocus required>
-            </div>
-            <h3>password</h3>
-            <div class="password">
-              <input type="password" placeholder="Enter your Password" required>
+            <label for="user-name">User name
+              <input id="user-name" type="text" placeholder="Enter your user name" autofocus required></label>
+            <label for="password">password </label>
+            <div class="password"> <input id="password" type="password" placeholder="Enter your Password" required>
               <img src="assets/images/icons/invisible 1.png">
             </div>
-            <div class="check">
-              <div class="input-check"><input type="checkbox" id="forget"><label for="forget">Rememebr me</label></div>
+            <div class="forget">
+              <div class="input-check"> <input type="checkbox" id="forget"><label for="forget">Rememebr me</label>
+              </div>
               <p>Forgot Password ? </p>
             </div>
-            <div class="submit"> <input type="submit" value="Login"></div>
+            <input type="submit" value="Login" class="submit">
             <p>Don’y have an Account ? <a href="register.html">Register</a></p>
           </form>
         </div>

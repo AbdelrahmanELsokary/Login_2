@@ -34,7 +34,7 @@ body {
   --Mithril: #878787;
   --Aged-Grey: #7d7d7d;
 }
-img{
+img {
   width: 100%;
 }
 a {
@@ -52,11 +52,9 @@ header .container a img {
 }
 section .container {
   display: flex;
-  justify-content: space-around;
-  height: calc(100vh - 100px);
+  justify-content: space-between;
   align-items: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  height: calc(100vh - 135px);
   padding-top: 100px;
 }
 section .container .login {
@@ -65,13 +63,14 @@ section .container .login {
   padding: 20px;
   width: 40%;
 }
-section .container .image{
+section .container .image {
   width: 50%;
 }
 section .container .login h3 {
   font-size: 25px;
   font-weight: 300;
   line-height: 37.5px;
+  padding-bottom: 20px;
 }
 section .container .login h1 {
   font-size: 31px;
@@ -82,88 +81,82 @@ section .container .login p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-}
-.user-name {
-  margin-bottom: 25px;
+  color: var(--black);
 }
 section .container .login form {
-  padding-top: 40px;
+  margin-top: 50px;
 }
-section .container .login form h3 {
+section .container .login form label {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  padding-bottom: 5px;
 }
-section .container .login form .user-name input {
+section .container .login form input {
   outline: none;
   border: 0.6px solid var(--Dire-Wolf);
   background-color: var(--white);
   border-radius: 6px;
-  padding: 15px;
   width: 100%;
+  padding: 15px;
+  margin: 10px 0 20px 0;
+}
+section .container .login form .password {
+  position: relative;
+}
+section .container .login form img {
+  position: absolute;
+  top: 23px;
+  right: 15px;
+  width: 20px;
+  height: 18px;
 }
 section .container .login form input::placeholder {
   font-size: 14px;
   font-weight: 300;
   color: var(--Dhūsar-Grey);
 }
-section .container .login form .password {
+section .container .login form .forget {
   display: flex;
-  border: 0.6px solid var(--Dire-Wolf);
-  border-radius: 6px;
-}
-section .container .login form .password input {
-  outline: none;
-  border: 0.6px solid var(--Dire-Wolf);
-  background-color: var(--white);
-  border: none;
-  border-radius: 6px;
-  padding: 15px;
-  width: 100%;
-}
-section .container .login form .password img {
-  width: 20px;
-  height: 18px;
-  margin: auto 20px;
-}
-section .container .login form .check {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  justify-content: space-between;
 }
-section .container .login form .check .input-check label {
+section .container .login form .forget label {
+  cursor: pointer;
   font-size: 12px;
   font-weight: 300;
-  padding: 4px;
 }
-section .container .login form .check p {
+section .container .login form .forget input {
+  cursor: pointer;
+  width: 20px;
+}
+section .container .login form .forget p {
   font-size: 12px;
   font-weight: 300;
-  color: var(--Thunder);
+  color: var(--Aged-Grey);
+  cursor: pointer;
 }
-section .container .login form .submit input {
+section .container .login form .submit {
   background-color: var(--black);
   color: var(--white);
-  border: none;
-  border-radius: 6px;
-  padding: 15px;
-  margin: 10px 0;
-  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
 }
 section .container .login form p {
   font-size: 16px;
   font-weight: 300;
   color: var(--Aged-Grey);
   text-align: center;
+  padding: 20px 0 10px 0;
 }
-section .container .login form p a{
+section .container .login form p a {
   font-weight: 600;
-  color: var(--Aged-Grey);
+  color: var(--black);
 }
-@media (max-width:545px) {
-  section .container .login{
+@media (max-width: 545px) {
+  section .container .login {
     width: 100%;
+  }
+  section .container .image{
+    display: none;
   }
 }
