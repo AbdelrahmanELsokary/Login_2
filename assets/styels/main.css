@@ -45,16 +45,20 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--white);
+  height: 30px;
   padding: 10px;
+  z-index: 5;
 }
-header .container a img {
-  width: 60px;
+header a {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
 }
 section .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: calc(100vh - 135px);
+  height: calc(100vh - 30px);
   padding-top: 100px;
 }
 section .container .login {
@@ -117,8 +121,11 @@ section .container .login form input::placeholder {
 }
 section .container .login form .forget {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+section .container .login form .forget .input-check{
+  padding-top: 13px;
 }
 section .container .login form .forget label {
   cursor: pointer;
@@ -152,11 +159,14 @@ section .container .login form p a {
   font-weight: 600;
   color: var(--black);
 }
-@media (max-width: 545px) {
+@media (max-width: 750px) {
   section .container .login {
     width: 100%;
   }
   section .container .image {
     display: none;
+  }
+  section .container h1 {
+    font-size: 20px;
   }
 }
