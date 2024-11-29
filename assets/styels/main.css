@@ -166,7 +166,4 @@ section .container .login form p a {
   section .container .image {
     display: none;
   }
-  section .container h1 {
-    font-size: 20px;
-  }
 }
