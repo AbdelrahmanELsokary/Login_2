@@ -156,7 +156,7 @@ section .container .login form p a {
   section .container .login {
     width: 100%;
   }
-  section .container .image{
+  section .container .image {
     display: none;
   }
 }
