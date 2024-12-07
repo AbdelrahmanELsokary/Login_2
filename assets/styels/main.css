@@ -122,15 +122,22 @@ section .container .login form input::placeholder {
 section .container .login form .forget {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
 }
-section .container .login form .forget .input-check{
+section .container .login form .forget a {
+  color: var(--black);
+}
+section .container .login form .forget .input-check {
+  display: flex;
+  align-items: center;
   padding-top: 13px;
 }
 section .container .login form .forget label {
   cursor: pointer;
   font-size: 12px;
   font-weight: 300;
+  padding-bottom: 8px;
 }
 section .container .login form .forget input {
   cursor: pointer;
