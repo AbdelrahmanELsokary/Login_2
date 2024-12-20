@@ -57,7 +57,8 @@ section .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 90px);
+  padding-top: 90px;
 }
 section .container .login {
   border: 0.5px solid var(--Mithril);
