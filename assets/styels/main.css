@@ -45,8 +45,7 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--white);
-  height: 30px;
-  padding: 10px;
+  padding: 20px 0;
   z-index: 5;
 }
 header a {
@@ -58,8 +57,7 @@ section .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: calc(100vh - 30px);
-  padding-top: 100px;
+  height: calc(100vh - 80px);
 }
 section .container .login {
   border: 0.5px solid var(--Mithril);
@@ -103,16 +101,6 @@ section .container .login form input {
   width: 100%;
   padding: 15px;
   margin: 10px 0 20px 0;
-}
-section .container .login form .password {
-  position: relative;
-}
-section .container .login form img {
-  position: absolute;
-  top: 23px;
-  right: 15px;
-  width: 20px;
-  height: 18px;
 }
 section .container .login form input::placeholder {
   font-size: 14px;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +12,11 @@
   <link rel="icon" href="assets/images/icons/download.jpg">
   <link rel="stylesheet" href="assets/styels/main.css">
 </head>
-
 <body>
   <header>
-    <a href="index.html">Sign in</a>
+    <div class="container">
+      <a href="index.html">Sign in</a>
+    </div>
   </header>
   <main>
     <section>
@@ -26,14 +26,12 @@
           <h1>Sign in to </h1>
           <p>Lorem Ipsum is simply </p>
           <form>
-            <label for="user-name">User name
-              <input id="user-name" type="text" placeholder="Enter your user name" autofocus required></label>
+            <label for="user_name">User name
+              <input id="user_name" type="text" placeholder="Enter your user name" autofocus required></label>
             <label for="password">password </label>
-            <div class="password"> <input id="password" type="password" placeholder="Enter your Password" required>
-              <img src="assets/images/icons/invisible 1.png">
-            </div>
+            <input id="password" type="password" placeholder="Enter your Password" required>
             <div class="forget">
-              <div class="input-check"> <input type="checkbox" id="forget"><label for="forget">Rememebr me</label>
+              <div class="input_check"> <input type="checkbox" id="forget"><label for="forget">Rememebr me</label>
               </div>
               <a href="#">Forgot Password ? </a>
             </div>
@@ -46,5 +44,4 @@
     </section>
   </main>
 </body>
-
 </html>
